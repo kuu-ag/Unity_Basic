@@ -35,11 +35,11 @@ public class GachaSystem : MonoBehaviour
 
     string DrawCharacter(bool forceAOrHigher = false)
     {
-        int randomValue = Random.Range(1, 101); // 1~100
+        int randomValue = Random.Range(1, 101);
 
-        if (forceAOrHigher && randomValue > 10) // A등급 이상 보장 조건
+        if (forceAOrHigher && randomValue > 10) 
         {
-            randomValue = Random.Range(1, 11); // 1~10 → S or A
+            randomValue = Random.Range(1, 11);
         }
 
         if (randomValue <= 3)
